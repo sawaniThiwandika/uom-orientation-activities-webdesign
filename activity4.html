@@ -44,28 +44,58 @@
             margin: auto;
         }
         a{
-            margin: 20px;
+            margin: 25px;
             font-size: 20px;
             font-family: "Times New Roman";
             color: lightskyblue;
+            text-decoration: none;
+
         }
         h1{
             color: white;
             font-size: 50px;
+            margin-left: 10px;
         }
+        #aboutSection{
+            width: 100%;
+            height: 369px;
+            position: relative;
+        }
+
         #aboutP{
+            position: absolute;
+            width: 50%;
+            height: 369px;
             color: white;
+            left: 0;
+            margin: auto;
+
+        }
+        #aboutImg{
+            position: absolute;
+            width: 50%;
+            height: 369px;
+            right: 0;
+            margin: auto;
+
+        }
+        #aboutImg>img{
+            border-radius: 10px;
+            width: 70%;
+            height: 369px;
 
         }
         li{
-            color: white
+            color: white;
+            font-size: 20px;
         }
         footer{
             color: white;
             position: relative;
             width: 100%;
             height: 100px;
-            background-color: black;
+            background-color: darkblue;
+            margin-top:50px;
 
         }
         #contact{
@@ -90,13 +120,38 @@
             height: fit-content;
         }
         dt{
-            color: white;
+            color: skyblue;
+            font-size: 30px;
+
         }
         dd{
             color: white;
+            font-size: 20px;
         }
         h5{
             color: white;
+            font-size: 50px;
+            height: fit-content;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+        }
+        #gallery{
+
+            width: 100%;
+            height: 400px;
+        }
+        .image-container {
+            width: 100%;
+            height: 300px;
+
+
+
+        }
+        img {
+            width: 24.71%;
+            height: 300px;
+
         }
 
     </style>
@@ -106,21 +161,26 @@
   <img src="assets/Black_and_Blue_Wave_Surfing_Club_Logo_1_-removebg-preview.png" alt="logo" id="logo">
     <h2 id="name">BLUE SEA</h2>
     <nav >
-        <a href="">Home</a>
-        <a href="">Facilities</a>
-        <a href ="">Rooms</a>
-        <a href="">Offers</a>
+        <a href="#aboutSection">Home</a>
+        <a href="#facilities">Facilities</a>
+        <a href ="#rooms">Rooms</a>
+        <a href="#offers">Offers</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#footer">Contact</a>
     </nav>
 </header>
-<section><h1>ABOUT</h1>
-    <p id="aboutP">Welcome to BLUE SEA Beach Resort – your oasis of tranquility by the shimmering shores. Nestled along the pristine
+<h1>ABOUT</h1>
+<section id="aboutSection">
+    <div id="aboutP"><p style="font-size: 20px" >Welcome to BLUE SEA Beach Resort – your oasis of tranquility by the shimmering shores. Nestled along the pristine
         coastline, our resort beckons with unparalleled beauty and serenity. Indulge in the ultimate beachfront escape,
         where luxurious accommodations, delectable cuisine, and warm hospitality converge to create unforgettable memories.
         Whether you're seeking relaxation under the sun, exhilarating water sports adventures, or simply a peaceful retreat,
         BLUE SEA Beach Resort offers an idyllic haven for every traveler. Come immerse yourself in the magic of the sea
-        and experience a slice of paradise like never before. Your journey to bliss begins here.</p>
-    <img src="assets/resort.jpg" alt="Resort">
-<h5>Facilities</h5>
+        and experience a slice of paradise like never before. Your journey to bliss begins here.</p></div>
+    <div id="aboutImg"> <img src="assets/resort.jpg" alt="Resort" ></div>
+
+</section>
+<h5 id="facilities">FACILITIES</h5>
     <ul>
 
         <li>Beach Access</li>
@@ -138,6 +198,7 @@
         <li>Laundry and Dry Cleaning</li>
 
     </ul>
+<h5 id="rooms">ROOMS</h5>
     <dl>
         <dt>Standard Room</dt>
         <dd> Standard rooms typically offer essential amenities such as a bed, private bathroom, and sometimes a small
@@ -149,14 +210,23 @@
         <dd>Luxury villas offer a lavish retreat with spacious living areas, upscale amenities, and personalized services
             such as a private chef, butler, and chauffeur, ensuring a truly indulgent experience</dd>
     </dl>
-</section>
-<section><h3>Offers</h3>
+
+<section id="offers"><h5>OFFERS</h5>
 <ul>
     <li><p> Tuesday, 10<sup>th</sup> April 2024 - &nbsp; Buy one get one free on beach activities</P></li>
     <li> <p>Friday, 14<sup>th</sup> April 2024 - &nbsp; Special seafood buffet dinner at the resort restaurant</p></li>
 
 </ul></section>
-<footer>
+<section id="gallery">
+    <h5>GALLERY</h5>
+    <div class="image-container">
+        <img src="assets/1.jpg">
+        <img src="assets/2.png">
+        <img src="assets/3.jpg">
+        <img src="assets/4.jpg">
+    </div>
+</section>
+<footer id="footer">
     <p id="contact"><small>contact&nbsp; +94763519008</small></p>
     <p id="address"><small>location &nbsp;Kaluthra,Srilanka</small></p>
     <p id="copy">&copy 2024 BLUE SEE , The beach resort</p>
